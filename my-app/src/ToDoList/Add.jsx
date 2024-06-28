@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Add ({handleAdd}){
 // React hooks: useState, useEffect, useCallback, useMemo, useReduce

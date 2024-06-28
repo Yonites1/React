@@ -4,11 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ToDoList from './ToDoList/TodoList';
+//import Example from './Counter/Example'
+import CounterApp from './Counter/CounterApp';
+//import CounterApp from './Counter/CounterApp'
+import UserProfileCard from './UserFrofileCard/UserProfileCard';
+import FormComponent from './Forms/formComponent';
+import ContactForm from './Forms/contactForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <ToDoList/>
+
+    <ContactForm/>
+
+     {/*}<FormComponent/>*/}
+
+   {/*} <UserProfileCard name="Ahmed" age="30" email="Ahmed@gmial.com"/>*/}
+
+ {/*}  <CounterApp />*/}
+
+   {/*}<ToDoList/>*/}
+  
+
   </React.StrictMode>
 );
 

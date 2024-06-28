@@ -1,0 +1,17 @@
+.user-profile-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 16px auto;
+  }
+  
+  .user-profile-card h2 {
+    margin-bottom: 8px;
+  }
+  
+  .user-profile-card p {
+    margin: 4px 0;
+  }
