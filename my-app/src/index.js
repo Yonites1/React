@@ -16,9 +16,9 @@ root.render(
   
   <React.StrictMode>
 
-<CounterApp />
+{/*}<CounterApp />*/}
 
- {/*}<UserProfileCard name="Ahmed" age="30" email="Ahmed@gmial.com"/>*/}
+ <UserProfileCard name="Ahmed" age="30" email="Ahmed@gmial.com"/>
     
       {/*}<FormComponent/>*/}
    {/*} <ContactForm/>*/}
