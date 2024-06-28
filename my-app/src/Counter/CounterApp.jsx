@@ -6,13 +6,16 @@ import Reset from './Reset';
 function CounterApp() {
   const [counter, setCounter] = useState(0);
 
-
+  
   const handleIncrementClick = () => {
-    setCounter(counter  + 1);
+    //setCounter(counter  + 1);
+    setCounter(prev=>prev+1);
+    
   };
 
   const handleDecrementClick = () => {
-    setCounter(counter  - 1);
+   // setCounter(counter  - 1);
+    setCounter(prev=>prev>0?prev-1:0);
    
   };
 
