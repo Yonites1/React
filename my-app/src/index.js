@@ -8,8 +8,8 @@ import ToDoList from './ToDoList/TodoList';
 import CounterApp from './Counter/CounterApp';
 //import CounterApp from './Counter/CounterApp'
 import UserProfileCard from './UserFrofileCard/UserProfileCard';
-import FormComponent from './Forms/formComponent';
-import ContactForm from './Forms/contactForm';
+import FormComponent from './FormComponent/formComponent';
+import ContactForm from './ContactForm/contactForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
