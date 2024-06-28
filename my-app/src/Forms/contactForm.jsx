@@ -50,7 +50,7 @@ function ContactForm() {
             console.log("Form data:", formData);
             alert('Form submitted successfully!');
         } else {
-            alert('Please correct the errors before submitting.');
+            alert('Please correct the errors before submitting');
         }
     }
 

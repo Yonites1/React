@@ -5,7 +5,7 @@ function Add ({handleAdd}){
 const [task, setTask] = useState("");
 function handleChange(event){
     console.log(event.target.name);
-    setTask(event.target.value);//"" changes the empty qoatation to sport   
+    setTask(event.target.value);//"" changes the empty qoatation to sport.   
 }
 function handleClick(event){
     handleAdd(task);

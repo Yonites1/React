@@ -26,7 +26,7 @@ function handleDelete(name){
 }
 
 function handleCheck(id){
-    console.log(id, "handle check in ToDoList")
+    console.log(id, "Handle check in ToDoList")
     setItems(items.map(item=>{
         if (item.id===id){
             item.done = true;

@@ -2,7 +2,7 @@ import {render, screen, fireEvent} from '@testing-library/react';
 import List from './List';
 describe("List",()=>{
 
-    // RGR// Red Green Refactor
+    // RGR// Red Green Refactor//
     const mockItems = [];
     beforeEach(()=>{  
     mockItems.push({id:1, name: "sport", done: false}, {id:1, name: "soccer", done: false})

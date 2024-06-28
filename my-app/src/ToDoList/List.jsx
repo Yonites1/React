@@ -5,7 +5,7 @@ function List ({items, onDelete, onCheck}){
     }
 
     function handleCheck(id){ 
-        console.log(id, "Id inside handlecheck")
+        console.log(id, "Id Inside handlecheck")
         onCheck(id);
     }
 
