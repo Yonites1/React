@@ -14,7 +14,9 @@ function List ({items, onDelete, onCheck}){
         <ul>
             {
             items.map((item,index)=>{
-                return <li key={index} style={{textDecorationLine: item.done ? "line-through":"none"}}> <input type="checkbox" onChange={()=>handleCheck(item.id)}/>{item.name} <button onClick={()=>handleDelete(item.name)}> Delete </button></li>
+                return <li key={index} style={{textDecorationLine: item.done ? "line-through":"none"}}> 
+                <input type="checkbox" onChange={()=>handleCheck(item.id)}/>{item.name} 
+                <button onClick={()=>handleDelete(item.name)}> Delete </button></li>
             })
             }
         </ul>

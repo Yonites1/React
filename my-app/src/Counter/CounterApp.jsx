@@ -23,10 +23,11 @@ function CounterApp() {
 
   return (
     <>
-      <h1 style={{fontSize: "120%",position: "relative", top: "5px",left:"50vh", border:"solid black 1px", marginLeft:"5%", width:"10vw" }}> Counter: {counter}</h1>
+      <h1 style={{fontSize: "100%",position: "relative", top: "5px",left:"50vh",
+       border:"solid black 1px", marginLeft:"5%", width:"10vw"}}> Counter: {counter}</h1>
       <Increment handleIncrement={handleIncrementClick} />
       <Decrement handleDecrement={handleDecrementClick} />
-      <Reset handleReset={handleResetClick} />
+      <Reset handleReset={handleResetClick}/>
     </>
   );
 }

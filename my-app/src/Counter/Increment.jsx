@@ -8,7 +8,8 @@ function Increment({ handleIncrement }) {
   };
 
   return (
-    <button type="button" className="increment" style={{fontSize: "100%",position: "relative", top: "5vh", left:"50vh", marginleft:"5px", backgroundColor: "green",
+    <button type="button" className="increment" style={{fontSize: "100%",position: "relative", top: "5vh", 
+    left:"50vh", marginleft:"5px", backgroundColor: "green",
     borderRadius: "8%", color: "white", }} onClick={handleIncrementClick}> Increment
     </button>
   );

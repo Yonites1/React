@@ -16,15 +16,21 @@ root.render(
   
   <React.StrictMode>
 
-    <ContactForm/>
+<CounterApp />
 
-     {/*}<FormComponent/>*/}
+ {/*}<UserProfileCard name="Ahmed" age="30" email="Ahmed@gmial.com"/>*/}
+    
+      {/*}<FormComponent/>*/}
+   {/*} <ContactForm/>*/}
 
-   {/*} <UserProfileCard name="Ahmed" age="30" email="Ahmed@gmial.com"/>*/}
+    {/*}<ToDoList/>*/}
 
- {/*}  <CounterApp />*/}
+    
 
-   {/*}<ToDoList/>*/}
+  
+
+
+
   
 
   </React.StrictMode>

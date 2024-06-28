@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 function ContactForm() {
     const [formData, setFormData] = useState({ name: '', email: '', phoneNumber: '' });
     const [errors, setErrors] = useState({});
@@ -48,7 +47,7 @@ function ContactForm() {
         event.preventDefault();
         if (formData.name && formData.email && validateEmail(formData.email) && formData.phoneNumber && Object.keys(errors).length === 0) {
             console.log("Form data:", formData);
-            alert('Form submitted successfully!');
+           alert('Form submitted successfully!');
         } else {
             alert('Please correct the errors before submitting');
         }
@@ -56,17 +55,17 @@ function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} /><br />
-           <span style={{ color: "red" }}>{errors.name}</span><br />
-            <input type="text" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} /><br />
-            <span style={{ color: "red" }}>{errors.email}</span><br />
-            <input type="tel" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleInputChange} /><br />
-            <span style={{ color: "red" }}>{errors.phoneNumber}</span><br />
-            <button type="submit" disabled={!formData.name || !formData.email || !formData.phoneNumber || Object.keys(errors).length > 0}>Submit</button>
+            <input style={{margin:'15px'}} type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} /><br />
+           <span style={{ color: "red", margin:'15px'}}>{errors.name}</span><br />
+            <input style={{margin:'15px'}} type="text" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} /><br />
+            <span style={{ color: "red", margin:'15px' }}>{errors.email}</span><br />
+            <input style={{margin:'15px'}} type="tel" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleInputChange} /><br />
+            <span style={{ color: "red", margin:'15px' }}>{errors.phoneNumber}</span><br />
+            <button style={{margin:'15px'}} type="submit" disabled={!formData.name || !formData.email || !formData.phoneNumber || Object.keys(errors).length > 0}>Submit</button>
             <div>
-                <span>Name: {formData.name}</span><br />
-                <span>Email: {formData.email}</span><br />
-                <span>Phone number: {formData.phoneNumber}</span>
+                <span style={{margin:'15px'}}>Name: {formData.name}</span><br />
+                <span style={{margin:'15px'}}>Email: {formData.email}</span><br />
+                <span style={{margin:'15px'}}>Phone number: {formData.phoneNumber}</span>
             </div>
         </form>
     );
